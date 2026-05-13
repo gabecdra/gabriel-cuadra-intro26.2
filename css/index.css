@@ -1,0 +1,149 @@
+
+/* ------ Google Font import -------*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap');
+
+
+/* -----Body Design-----*/
+body {
+    background-color: #9d75e1;         
+    color: #333333;                      
+    font-family: 'Open Sans';
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 750px;
+}
+
+/* -----Navigation------ */
+
+nav {
+    background-color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    position: sticky;
+    top: 10px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+nav a {
+    color: #2c2c2c;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #7439c7;
+}
+
+
+/*Heading Design*/
+
+
+h1 {
+    font-family: 'Montserrat';
+    font-size: 42px;
+    font-weight: 700;
+    color: #7439c7;                     
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #e0d5c5;
+}
+h2 {
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 700;
+    color: #2c2c2c;
+    margin-top: 40px;                   
+    margin-bottom: 15px;
+}
+
+/*About Section*/
+
+p {
+    text-align: center;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+
+/*----Experience Section----*/
+
+#experience + ul {
+    list-style: none;
+    padding: 0;
+}
+
+#experience + ul li {
+    background-color: #ffffff;
+    padding: 15px 20px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+    border-left: 13px solid #000000;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.experience-title {
+    font-weight: bold;
+    font-size: 16px;
+    color: #2c2c2c;
+}
+
+.experience-date {
+    color: #888888;
+    font-size: 14px;
+}
+
+.experience-description {
+    width: 100%;                
+    margin-top: 8px;
+    text-align: left;
+    font-size: 14px;
+    color: #555555;
+    line-height: 1.5;
+}
+
+
+/*Connect Section*/
+
+#connect + ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#connect + ul a {
+    display: inline-block;
+    padding: 10px 50px;
+    background-color: #ffffff;
+    color: #2c5f8a;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid #e0d5c5;
+}
+
+#connect + ul a:hover {
+    background-color: #6429a3;
+    color: #ffffff;
+    border-color: #2c5f8a;
+    text-decoration: underline;
+}
