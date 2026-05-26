@@ -153,7 +153,7 @@ p {
 
 #skills ul {
     list-style: none;
-    padding: 0;
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;

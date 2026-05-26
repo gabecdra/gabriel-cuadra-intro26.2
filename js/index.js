@@ -1,8 +1,18 @@
-const body = document.querySelector("body");
+let today = new Date();
+let thisYear = today.getFullYear();
 
-const footer = document.createElement("footer");
-footer.innerHTML = `<p>Copyright &copy; 2026 Gabriel Cuadra. All rights reserved.</p>`;
+
+let footer = document.createElement("footer");
+let body = document.querySelector("body");
 body.appendChild(footer);
+let footerElement = document.querySelector("footer");
+let copyright = document.createElement("p");
+copyright.innerHTML = `&copy; ${thisYear} Gabriel Cuadra`;
+footerElement.appendChild(copyright);
+
+
+
+
 
 let skills = ["JavaScript", "HTML", "CSS", "Python", "SQL", "Machine Learning", "Data Visualization"];
 
