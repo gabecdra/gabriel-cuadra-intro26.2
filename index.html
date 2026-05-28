@@ -14,6 +14,7 @@
             <li><a href="#experience">Experience</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#leave-message">Leave a Message</a></li>
             <li><a href="#connect">Connect</a></li>
         </ul>
     </nav>
@@ -64,7 +65,29 @@
         <li><a href="https://www.linkedin.com/in/gabrielcuadra8"> LinkedIn</a></li>
         <li><a href="https://github.com/gabecdra"> Github</a></li>
     </ul>
+    <section id="leave-message"> 
+       <h2> Leave a Message</h2> 
+       <form name ="leave_message">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="usersName" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="usersEmail" required><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea name="message" id="usersMessage" required></textarea><br><br>
+
+            <button type="submit" class ="submit-btn">Submit</button>
+       </form>
+    </section>
+
+    <section id = "messages">
+        <h2>Messages</h2>
+        <ul id="message-list"></ul>
+    </section>
 
     <script src="js/index.js"></script>
+
+    
 </body>
 </html>
