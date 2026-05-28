@@ -147,3 +147,24 @@ p {
     border-color: #2c5f8a;
     text-decoration: underline;
 }
+
+
+/*SkillsSection*/
+
+#skills ul {
+    list-style: none;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#skills ul li {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #e0d5c5;
+    font-weight: bold;
+    font-size: 14px;
+    color: #2c2c2c;
+}
