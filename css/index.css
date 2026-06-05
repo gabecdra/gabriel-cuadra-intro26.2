@@ -168,3 +168,95 @@ p {
     font-size: 14px;
     color: #2c2c2c;
 }
+/*MessageForm*/
+#leave-message form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+#leave-message label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #2c2c2c;
+}
+
+#leave-message input,
+#leave-message textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#leave-message textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+#leave-message button[type="submit"] {
+    background-color: #7439c7;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#leave-message button[type="submit"]:hover {
+    background-color: #7439c7a3;
+}
+
+/* MessageListItem */
+#messages ul {
+    list-style: none;
+    padding: 0;
+}
+
+#messages ul li {
+    background-color: #ffffff;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border-left: 4px solid #161211;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+#messages ul li a {
+    color: #2c5f8a;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#messages ul li a:hover {
+    color: #7439c7;
+    text-decoration: underline;
+}
+
+#messages ul li span {
+    color: #555555;
+}
+
+#messages ul li button {
+    background-color: #7439c7;
+    color: #ffffff;
+    border: none;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+#messages ul li button:hover {
+    background-color: #7439c7a3;
+}
