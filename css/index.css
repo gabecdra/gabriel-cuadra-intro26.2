@@ -5,6 +5,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap');
 
 
+/*Fixing the scroll margin for the Navigation buttons*/
+h2 {
+    scroll-margin-top: 100px;    
+}
+
+#skills,
+#projects {
+    scroll-margin-top: 140px;
+}
 /* -----Body Design-----*/
 body {
     background-color: #9d75e1;         
@@ -259,4 +268,26 @@ p {
 
 #messages ul li button:hover {
     background-color: #7439c7a3;
+}
+
+/* PROJECTS SECTION*/
+
+#projects ul {
+    list-style: none;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+#projects ul li {
+    background-color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border-left: 4px solid #2c5f8a;
+    font-weight: bold;
+    color: #2c2c2c;
+
+    flex: 1 1 200px;
 }

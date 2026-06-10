@@ -11,9 +11,6 @@ copyright.innerHTML = `&copy; ${thisYear} Gabriel Cuadra`;
 footerElement.appendChild(copyright);
 
 
-
-
-
 let skills = ["JavaScript", "HTML", "CSS", "Python", "SQL", "Machine Learning", "Data Visualization"];
 
 let skillsSection = document.getElementById("skills");
@@ -62,4 +59,39 @@ messageForm.addEventListener("submit", function(event) {
     
 });
 
+
+// GITHUB FETCH // 
+fetch("https://api.github.com/users/gabecdra/repos")
+    .then(function(response) {
+        return response.json();
+    })
+    .then(function(repositories) {
+            
+        console.log("GitHub Repositories:", repositories);
+
+        let projectSection = document.getElementById("projects");
+            
+        let projectList = projectSection.querySelector("ul");
+
+        for (let i = 0; i < repositories.length; i++) {
+                
+            let project = document.createElement("li");
+
+             project.innerText = repositories[i].name;
+
+            projectList.appendChild(project);
+        }
+     })
+    .catch(function(error) {
+        console.log("Error fetching GitHub repos:", error);
+
+        let projectSection = document.getElementById("projects");
+        let projectList = projectSection.querySelector("ul");
+            
+        let errorMessage = document.createElement("li");
+       
+        errorMessage.innerText = "Sorry, couldn't load projects right now.";
+        errorMessage.style.color = "red";
+        projectList.appendChild(errorMessage);
+});
 
