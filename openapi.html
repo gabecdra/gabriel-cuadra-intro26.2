@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat Breed Explorer</title>
+    <link rel="stylesheet" href="css/openapi.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">← Back to Portfolio</a></li>
+            <li><a href="#" id="breeds-link" class="active">All Breeds</a></li>
+            <li><a href="#" id="details-link">Breed Details</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1> Cat Breed Explorer</h1>
+        <p class="subtitle">Discover different cat breeds</p>
+        <div id="breeds-section" class="active-section">
+            <div id="breeds-grid" class="breeds-grid">
+                <p class="loading">Loading cat breeds...</p>
+            </div>
+        </div>
+
+        <div id="details-section" class="hidden-section">
+            <div id="breed-detail" class="breed-detail">
+                <p class="loading">Select a breed to see details</p>
+            </div>
+        </div>
+
+        <div id="error-message" class="error hidden"></div>
+    </main>
+
+    <footer>
+        <p>Data from <a href="https://thecatapi.com/" target="_blank">TheCatAPI</a></p>
+    </footer>
+
+    <script src="js/openapi.js"></script>
+</body>
+</html>
