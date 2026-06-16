@@ -1,0 +1,193 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans&display=swap');
+
+
+h2 {
+    scroll-margin-top: 100px;    
+}
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: #9d75e1;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+/* Navigation */
+nav {
+    background-color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    top: 10px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+nav a {
+    color: #2c2c2c;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #7439c7;
+}
+
+
+/* Main Content */
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #7439c7;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+/* Sections */
+.active-section {
+    display: block;
+}
+
+.hidden-section {
+    display: none;
+}
+
+/* Breeds Grid */
+.breeds-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.breed-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.breed-card:hover {
+    transform: translateY(-5px);
+}
+
+.breed-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.breed-card .breed-name {
+    padding: 15px;
+    font-weight: bold;
+    color: #000000;
+}
+
+/* Breed Detail */
+.breed-detail {
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.breed-detail img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.breed-detail h2 {
+    color: #000000;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.detail-item {
+    padding: 12px;
+    background: #fff5e6;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.detail-label {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #000000;
+}
+
+.detail-value {
+    font-size: 1em;
+    color: #666;
+    font-weight: bold;
+}
+
+/* Back button in detail view */
+.back-btn {
+    background: #7439c7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.back-btn:hover {
+    background: #7439c7;
+}
+
+/* Loading & Error */
+.loading {
+    color: #999;
+    font-style: italic;
+    grid-column: 1 / -1;
+    padding: 50px;
+}
+
+.error {
+    background: #ffe6e6;
+    color: #cc0000;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #000000;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #7439c7;
+}
